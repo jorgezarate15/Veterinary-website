@@ -1,0 +1,518 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 90px; /* Ajusta según la altura de tu header */
+    scroll-behavior: smooth; /* Scroll suave opcional */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4e4e4;
+}
+
+            /* Estilos para el encabezado */
+
+.header {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 50%, #1e3c72 100%); /*gradiente de fondo*/
+    color: #ffffff; /*color del texto*/
+    padding: 15px 30px; /*espacio alrededor del contenido*/
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /*para sombra*/
+    
+    /* FLEXBOX para título izquierda y menú derecha */
+    display: flex; /*para alinear elementos*/
+    justify-content: space-between; /*espacio entre elementos*/
+    align-items: center; /*alinear verticalmente*/
+
+    /* PROPIEDADES PARA HACER EL HEADER FIJO */
+    position: fixed; /* Mantiene el header fijo */
+    top: 0; /* Posicionado en la parte superior */
+    left: 0; /* Posicionado desde la izquierda */
+    width: 100%; /* Ocupa todo el ancho */
+    z-index: 1000; /* Por encima de otros elementos */
+}
+
+main {
+    margin-top: 90px; /*espacio para el header fijo*/
+}
+
+.tituloPrincipal h1 {
+    font-size: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.menuPrincipal nav ul {
+    display: flex; /*para alinear horizontalmente*/
+    list-style: none; /*sin viñetas*/
+    gap: 30px; /*espacio entre los elementos del menú*/
+}
+
+.menuPrincipal nav ul li a {
+    color: #ffffff;
+    text-decoration: none; /*sin subrayado*/
+    font-weight: bold; /*negrita*/
+    padding: 10px 20px; /*espacio alrededor del texto*/
+    border-radius: 25px; /*bordes redondeados*/
+    transition: all 0.3s ease; /*transición suave para hover*/
+}
+
+.menuPrincipal nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2); /*fondo semi-transparente al pasar el mouse*/
+    transform: translateY(-2px); /*levantar ligeramente el botón*/
+}
+
+            /* Estilos para la sección de inicio */
+
+.contenidoInicio {
+    padding: 50px 30px; /*espacio alrededor de la sección*/
+    max-width: 1200px; /*ancho máximo del contenedor*/
+    margin: 0 auto; /*centrar el contenedor*/
+
+/* FLEXBOX para alinear texto e imagen lado a lado */
+    display: flex; /*para alinear elementos*/
+    justify-content: space-between; /*espacio entre elementos*/
+    align-items: center;
+    gap: 30px; /*espacio entre los elementos*/
+    min-height: 400px; /*altura mínima*/
+}
+
+
+.informacionPrincipal {
+    flex: 1; /*ocupa el espacio restante*/
+    max-width: 550px; /*ancho máximo del contenedor*/
+    border: 7px solid #ffffff; /*borde blanco*/
+    border-radius: 30px; /*bordes redondeados*/
+    padding: 30px; /*espacio interno*/
+    background-color: rgba(255, 255, 255, 0.2); /*fondo blanco semi-transparente*/
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /*sombra para profundidad*/
+}
+
+.informacionPrincipal h2 {
+    font-size: 2.5rem; /*tamaño del título*/
+    color: #002a77; /*color del título*/
+    margin-bottom: 20px; /*espacio debajo del título*/
+    text-align: left;
+}
+.informacionPrincipal p {
+    font-size: 1.2rem; /*tamaño del texto*/
+    line-height: 1.6; /*altura de línea para mejor legibilidad*/
+    color: #333333; /*color del texto*/
+    text-align: left;
+}
+
+/* Imagne principal */
+.imagenPrincipal {
+    flex-shrink: 0;
+    max-width: 550px;
+}
+
+    .imagenPrincipal img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+} 
+
+            /* estilo para sección de servicios */
+
+#Servicioss {
+    background-color:rgb(219, 219, 219);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /*para sombra*/
+    border-radius: 20px; /*bordes redondeados*/
+}
+
+.seccionServicio {
+    padding: 50px 30px; /*espacio alrededor de la sección*/
+    max-width: 1200px; /*ancho máximo del contenedor*/
+    margin: 0 auto; /*centrar el contenedor*/
+    display: flex; /*para alinear elementos*/
+    justify-content: center; /*centrar horizontalmente*/
+    align-items: center; /*centrar verticalmente*/
+    gap: 30px; /*espacio entre los elementos*/
+    min-height: 400px; /*altura mínima*/
+}
+
+.listasServicios {
+    padding: 20px; /*espacio alrededor del contenido*/
+    max-width: 1000px; /*ancho máximo del contenedor*/
+    margin: 0 auto; /*centrar el contenedor*/
+    text-align: center; /*centrar el texto*/
+}
+
+.listaServicios h2 {
+    font-size: 2.5rem; /*tamaño del título*/
+    color: #002a77; /*color del título*/
+    margin-bottom: 60px; /*espacio debajo del título*/
+    text-align: center; /*centrar el texto*/
+}
+
+.serviciosCaja { 
+    display: grid; /*usar grid para organizar los elementos*/
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+    gap: 20px; /*espacio entre los elementos*/
+    margin-top: 20px; /*espacio encima de la caja*/
+    }
+
+.Servicio-i {
+    background: rgba(255, 255, 255, 0.2); /*fondo blanco semi-transparente*/
+    border: 7px solid #ffffff; /*borde blanco*/
+    border-radius: 30px; /*bordes redondeados*/
+    padding: 20px; /*espacio interno*/
+    text-align: center; /*centrar el texto*/
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /*sombra para profundidad*/
+}
+
+.Servicio-i h4 {
+    color: #002a77; /*color del título*/
+    font-size: 1.3rem; /*tamaño del título*/
+    margin-bottom: 10px; /*espacio debajo del título*/
+    }
+
+.Servicio-i p {
+    font-size: 1.2rem; /*tamaño del texto*/
+    line-height: 1.6; /*altura de línea para mejor legibilidad*/
+    color: #333333; /*color del texto*/
+}
+
+.adopcion {
+    grid-column: 1 / -1; /* Ocupa desde la primera hasta la última columna */
+    max-width: 500px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar la caja */
+}
+
+            /*estilo de contacto*/ 
+
+#Contacto {
+    background-color: rgb(233, 229, 229); /*color de fondo*/
+    padding: 50px 0; /*espacio arriba y abajo*/
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /*para sombra*/
+    border-radius: 20px; /*bordes redondeados*/
+}
+
+.seccionContacto {
+    padding: 50px 30px; /*espacio alrededor de la sección*/
+    max-width: 1200px; /*ancho máximo del contenedor*/
+    margin: 0 auto; /*centrar el contenedor*/
+    
+    /* FLEXBOX para alinear las dos cajas lado a lado */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea al inicio verticalmente */
+    gap: 40px; /*espacio entre los elementos*/
+    min-height: 500px; /*altura mínima*/
+}
+
+/* Caja de información de contacto */
+.informacionContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; 
+    flex: 1; /*ocupa el espacio restante*/
+    border-radius: 30px; /*bordes redondeados*/
+    padding: 7px; /* Grosor del borde */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /*sombra para profundidad*/
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 50%, #1e3c72 100%); /*gradiente de fondo*/
+    position: relative; /*para posicionar el contenido interno*/
+
+}
+
+.contenidoInterno {
+    text-align: center; /*centrar el texto*/
+    padding: 20px; /*espacio alrededor del contenido*/
+    width: 100%; /*ancho máximo del contenedor*/
+    min-height: 500px; /*altura mínima del contenedor*/
+    margin: 0 auto; /*centrar el contenedor*/
+    content: center; /*centrar el contenido*/
+    position: absolute;
+}
+
+    /* Contenido interno con fondo blanco y bordes redondeados */
+.informacionContacto > .contenidoInterno { 
+    background: #fff; /*fondo blanco*/
+    border-radius: 23px; /* 30px - 7px */
+    padding: 30px; /*espacio interno*/
+    position: relative; /*para posicionar el contenido interno*/
+    z-index: 1; /*para que esté por encima del borde*/
+}
+
+.informacionContacto h2{
+    font-size: 2.5rem; /*tamaño del título*/
+    color: #002a77; /*color del título*/
+    margin-bottom: 15px; /*espacio debajo del título*/
+    text-align: center; /*alinear a la izquierda*/
+
+}
+.informacionContacto p {
+    font-size: 1.2rem; /*tamaño del texto*/
+    line-height: 1.6; /*altura de línea para mejor legibilidad*/
+    color: #333333; /*color del texto*/
+    margin-bottom: 10px; /*espacio debajo del párrafo*/
+    text-align: center; /*alinear a la izquierda*/
+}
+
+.informacionContacto ul {
+    list-style: none; /*sin viñetas*/
+    padding: 2px; /*sin padding*/
+}
+.informacionContacto ul li {
+    margin-bottom: 10px; /*espacio debajo de cada elemento*/
+    font-size: 1.2rem; /*tamaño del texto*/
+    color: #333333; /*color del texto*/
+    display: flex; /*para alinear icono y texto*/
+    align-items: center; /*alinear verticalmente*/
+    gap: 10px; /*espacio entre icono y texto*/
+}
+
+/* Caja del formulario de contacto */
+
+.formularioContacto {
+    flex: 1; /*ocupa el espacio restante*/
+    border-radius: 30px; /*bordes redondeados*/
+    padding: 7px; /* Grosor del borde */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /*sombra para profundidad*/
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 50%, #1e3c72 100%); /*gradiente de fondo*/
+    position: relative; /*para posicionar el contenido interno*/
+}
+
+    /* Contenido interno con fondo blanco y bordes redondeados */
+.formularioContacto > .contenidoInternoF {
+    background: #fff; /*fondo blanco*/
+    border-radius: 23px; /* 30px - 7px */
+    padding: 30px; /*espacio interno*/
+    position: relative; /*para posicionar el contenido interno*/
+    z-index: 1; /*para que esté por encima del borde*/
+}
+
+.formularioContacto h2 {
+    font-size: 2.5rem; /*tamaño del título*/
+    color: #002a77; /*color del título*/
+    margin-bottom: 20px; /*espacio debajo del título*/
+    text-align: center; /*centrar el texto*/
+}
+
+.contenidoInternoF form {
+    display: flex; /*para alinear elementos*/
+    flex-direction: column; /*alinear verticalmente*/
+    gap: 20px; /*espacio entre los elementos*/
+}
+
+.nombre, .email, .mensaje {
+    display: flex; /*para alinear elementos*/
+    flex-direction: column; /*alinear verticalmente*/
+
+}
+
+.contenidoInternoF label {
+    font-weight: bold; /*negrita*/
+    color: #002a77; /*color del texto*/
+    margin-bottom: 8px; /*espacio debajo del label*/
+    font-size: 1.1rem; /*tamaño del texto*/
+}
+
+.contenidoInternoF input, .contenidoInternoF textarea {
+    padding: 10px; /*espacio interno*/
+    border: 2px solid #ccc; /*borde gris claro*/
+    border-radius: 10px; /*bordes redondeados*/
+    font-size: 1rem; /*tamaño del texto*/
+}
+
+.contenidoInternoF input:focus, .contenidoInternoF textarea:focus {
+    border-color: #002a77; /*cambiar color del borde al enfocar*/
+    outline: none; /*quitar el outline por defecto*/
+}
+.contenidoInternoF textarea {
+    resize: vertical; /*permitir redimensionar verticalmente*/
+    min-height: 100px; /*altura mínima*/
+}
+
+/* Estilo para el botón de enviar */
+.enviar {
+    text-align: center; /*centrar el botón*/
+    margin-top: 10px; /*espacio encima del botón*/
+}
+
+/* Estilos del botón */
+.enviar button {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 50%, #1e3c72 100%); /*gradiente de fondo*/
+    color: #ffffff; /*color del texto*/
+    padding: 15px 40px; /*espacio alrededor del texto*/
+    border: none; /*sin borde*/
+    border-radius: 25px; /*bordes redondeados*/
+    font-size: 1.1rem; /*tamaño del texto*/
+    font-weight: bold; /*negrita*/
+    cursor: pointer; /*cambiar cursor al pasar sobre el botón*/
+    transition: all 0.3s ease; /*transición suave para hover*/
+    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3); /*sombra para profundidad*/
+}
+
+/* Efecto hover para el botón */
+.enviar button:hover {
+    transform: translateY(-2px); /*levantar ligeramente el botón*/
+    box-shadow: 0 8px 25px rgba(79, 172, 254, 0.4); /*sombra más grande al pasar el mouse*/
+}
+
+.enviar button:active {
+    transform: translateY(0); /*volver a la posición original al hacer clic*/
+}
+
+            /* estilo para ña seccion de nosotros */
+#Nosotros {
+    background-color: rgb(219, 219, 219);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /*para sombra*/
+    border-radius: 20px; /*bordes redondeados*/
+}
+.seccionNosotros {
+    padding: 50px 30px; /*espacio alrededor de la sección*/
+    max-width: 1200px; /*ancho máximo del contenedor*/
+    margin: 0 auto; /*centrar el contenedor*/
+    display: grid; /*para alinear elementos*/
+    justify-content: center; /*centrar horizontalmente*/
+    align-items: center; /*centrar verticalmente*/
+    gap: 30px; /*espacio entre los elementos*/
+    min-height: 400px; /*altura mínima*/
+}
+
+.contenidoInternoN {
+    background-color: #e4e4e4; /*color de fondo*/
+    padding: 20px; /*espacio alrededor del contenido*/
+    max-width: 1000px; /*ancho máximo del contenedor*/
+    margin: 0 auto; /*centrar el contenedor*/
+    text-align: center; /*centrar el texto*/
+    border-radius: 20px; /*bordes redondeados*/
+    border: 7px solid #ffffff; /*borde blanco*/
+}
+
+.contenidoInternoN h2 {
+    font-size: 2.5rem; /*tamaño del título*/
+    color: #002a77; /*color del título*/
+    margin-bottom: 20px; /*espacio debajo del título*/
+    text-align: center; /*centrar el texto*/
+}
+.contenidoInternoN p {
+    font-size: 1.2rem; /*tamaño del texto*/
+    line-height: 1.6; /*altura de línea para mejor legibilidad*/
+    color: #333333; /*color del texto*/
+    text-align: center; /*centrar el texto*/
+}
+
+            /* Estilos para el pie de página */
+
+.footer {
+    background: linear-gradient(135deg, #303030 0%, #505050 50%, #1a1a1a 100%); /*gradiente de fondo*/
+    color: #ffffff; /*color del texto*/ 
+    text-align: center; /*centrar el texto*/
+    padding: 20px 30px; /*espacio alrededor del contenido*/
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1); /*para sombra*/
+    margin-top: 50px; /*espacio encima del footer*/
+}
+
+/* --- RESPONSIVE: TABLETS --- */
+@media (max-width: 900px) {
+    .formularioContacto {
+        margin: 0 auto; /* Centra el formulario */
+        width: 100%;    /* Ocupa todo el ancho disponible */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formularioContacto > .contenidoInternoF {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+    .contenidoInicio,
+    .seccionServicio,
+    .seccionContacto {
+        flex-direction: column;
+        gap: 20px;
+        min-height: unset;
+    }
+    .imagenPrincipal,
+    .informacionPrincipal,
+    .informacionContacto,
+    .formularioContacto {
+        max-width: 100%;
+    }
+    .serviciosCaja {
+        grid-template-columns: 1fr;
+    }
+    .seccionNosotros {
+        padding: 30px 10px;
+        gap: 15px;
+    }
+}
+
+
+/* --- RESPONSIVE: MOVILES --- */
+@media (max-width: 600px) {
+    .formularioContacto {
+        margin: 0 auto; /* Centra el formulario */
+        width: 100%;    /* Ocupa todo el ancho disponible */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formularioContacto > .contenidoInternoF {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 8px 2px;
+        text-align: center;
+    }
+    .tituloPrincipal h1 {
+        font-size: 1.1rem;
+    }
+    .menuPrincipal nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+    .menuPrincipal nav ul li a {
+        padding: 8px 10px;
+        font-size: 0.95rem;
+    }
+    main {
+        margin-top: 80px;
+    }
+    .contenidoInicio,
+    .seccionServicio,
+    .seccionContacto,
+    .seccionNosotros {
+        padding: 10px 2px;
+        gap: 5px;
+    }
+    .informacionPrincipal,
+    .informacionContacto > .contenidoInterno,
+    .formularioContacto > .contenidoInternoF,
+    .contenidoInternoN {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+    .imagenPrincipal img {
+        width: 100%;
+        height: auto;
+        max-width: 100vw;
+    }
+    .serviciosCaja {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    .footer {
+        padding: 8px 2px;
+        font-size: 0.85rem;
+    }
+    .informacionContacto h2,
+    .formularioContacto h2,
+    .contenidoInternoN h2,
+    .listaServicios h2 {
+        font-size: 1.2rem;
+    }
+}
