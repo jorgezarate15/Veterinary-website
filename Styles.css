@@ -359,7 +359,7 @@ main {
     transform: translateY(0); /*volver a la posición original al hacer clic*/
 }
 
-            /* estilo para ña seccion de nosotros */
+            /* estilo para la seccion de nosotros */
 #Nosotros {
     background-color: rgb(219, 219, 219);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /*para sombra*/
@@ -412,6 +412,39 @@ main {
 
 /* --- RESPONSIVE: TABLETS --- */
 @media (max-width: 900px) {
+    /* HEADER CORREGIDO PARA TABLETS */
+    .header {
+        padding: 12px 20px; /* Padding reducido para tablets */
+        /* Mantener flexbox horizontal */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        min-height: 70px; /* Altura controlada */
+    }
+
+    .tituloPrincipal h1 {
+        font-size: 1.5rem; /* Tamaño reducido para tablets */
+        margin: 0;
+    }
+
+    .menuPrincipal nav ul {
+        display: flex;
+        flex-direction: row; /* Mantener horizontal */
+        gap: 15px; /* Espacio reducido */
+        margin: 0;
+        padding: 0;
+    }
+
+    .menuPrincipal nav ul li a {
+        padding: 8px 15px; /* Padding reducido */
+        font-size: 0.9rem; /* Texto más pequeño */
+    }
+
+    main {
+        margin-top: 80px; /* Ajustado para header más pequeño */
+    }
+
     .formularioContacto {
         margin: 0 auto; /* Centra el formulario */
         width: 100%;    /* Ocupa todo el ancho disponible */
@@ -449,70 +482,107 @@ main {
 
 /* --- RESPONSIVE: MOVILES --- */
 @media (max-width: 600px) {
+    /* HEADER CORREGIDO PARA MÓVILES */
+    .header {
+        padding: 10px 15px; /* Padding reducido */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        /* Mantener flexbox horizontal en una sola línea */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap; /* No permitir que se envuelvan los elementos */
+        min-height: 60px; /* Altura mínima controlada */
+    }
+
+    /* Título más pequeño */
+    .tituloPrincipal h1 {
+        font-size: 1.2rem;
+        margin: 0;
+        white-space: nowrap; /* Evitar que se rompa en varias líneas */
+    }
+
+    /* Menú horizontal compacto */
+    .menuPrincipal nav ul {
+        display: flex;
+        flex-direction: row; /* Mantener horizontal */
+        gap: 8px; /* Espacio reducido entre elementos */
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .menuPrincipal nav ul li a {
+        padding: 6px 10px; /* Padding más pequeño */
+        font-size: 0.8rem; /* Texto más pequeño */
+        border-radius: 15px;
+        white-space: nowrap; /* Evitar que el texto se rompa */
+    }
+
+    /* Ajustar margen superior del main */
+    main {
+        margin-top: 70px; /* Reducido para header más pequeño */
+    }
+
+    /* Resto de estilos móviles */
     .formularioContacto {
-        margin: 0 auto; /* Centra el formulario */
-        width: 100%;    /* Ocupa todo el ancho disponible */
+        margin: 0 auto;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    
     .formularioContacto > .contenidoInternoF {
         width: 100%;
         min-width: 0;
         box-sizing: border-box;
     }
 
-    .header {
-        flex-direction: column;
-        padding: 8px 2px;
-        text-align: center;
-    }
-    .tituloPrincipal h1 {
-        font-size: 1.1rem;
-    }
-    .menuPrincipal nav ul {
-        flex-direction: column;
-        gap: 10px;
-        padding: 0;
-    }
-    .menuPrincipal nav ul li a {
-        padding: 8px 10px;
-        font-size: 0.95rem;
-    }
-    main {
-        margin-top: 80px;
-    }
     .contenidoInicio,
     .seccionServicio,
     .seccionContacto,
     .seccionNosotros {
-        padding: 10px 2px;
-        gap: 5px;
+        padding: 20px 15px;
+        gap: 15px;
+        flex-direction: column;
+        min-height: unset;
     }
+    
     .informacionPrincipal,
     .informacionContacto > .contenidoInterno,
     .formularioContacto > .contenidoInternoF,
     .contenidoInternoN {
-        padding: 10px;
-        font-size: 0.95rem;
+        padding: 20px;
     }
+    
     .imagenPrincipal img {
         width: 100%;
         height: auto;
-        max-width: 100vw;
+        max-width: 100%;
     }
+    
     .serviciosCaja {
         grid-template-columns: 1fr;
-        gap: 8px;
+        gap: 15px;
     }
+    
     .footer {
-        padding: 8px 2px;
-        font-size: 0.85rem;
+        padding: 15px 10px;
+        font-size: 0.9rem;
     }
+    
     .informacionContacto h2,
     .formularioContacto h2,
     .contenidoInternoN h2,
     .listaServicios h2 {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
+    }
+
+    .informacionPrincipal h2 {
+        font-size: 1.8rem;
     }
 }
