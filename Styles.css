@@ -459,9 +459,6 @@ main {
     margin-top: 50px; /*espacio encima del footer*/
 }
 
-:hover {
-    text-decoration: underline; /*subrayado al pasar el mouse*/
-}
 
 /* ============================================ */
 /*           ANIMACIONES KEYFRAMES             */
