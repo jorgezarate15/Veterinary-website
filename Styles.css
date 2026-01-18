@@ -88,6 +88,13 @@ main {
     padding: 30px; /*espacio interno*/
     background-color: rgba(255, 255, 255, 0.2); /*fondo blanco semi-transparente*/
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /*sombra para profundidad*/
+    animation: slideInLeft 0.8s ease-out; /*animación de entrada*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*transición suave*/
+}
+
+.informacionPrincipal:hover {
+    transform: translateY(-10px) scale(1.02); /*elevar y agrandar al pasar el mouse*/
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3); /*sombra más intensa*/
 }
 
 .informacionPrincipal h2 {
@@ -107,6 +114,7 @@ main {
 .imagenPrincipal {
     flex-shrink: 0;
     max-width: 550px;
+    animation: slideInRight 0.8s ease-out; /*animación de entrada*/
 }
 
     .imagenPrincipal img {
@@ -114,6 +122,12 @@ main {
     height: auto;
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*transición suave*/
+}
+
+.imagenPrincipal img:hover {
+    transform: scale(1.05) rotate(2deg); /*agrandar y rotar ligeramente*/
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3); /*sombra más intensa*/
 } 
 
             /* estilo para sección de servicios */
@@ -163,7 +177,22 @@ main {
     padding: 20px; /*espacio interno*/
     text-align: center; /*centrar el texto*/
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /*sombra para profundidad*/
+    animation: fadeInUp 0.6s ease-out backwards; /*animación de entrada*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /*transiciones suaves*/
 }
+
+.Servicio-i:hover {
+    transform: translateY(-10px) scale(1.05); /*elevar y agrandar*/
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3); /*sombra más intensa*/
+    background: rgba(255, 255, 255, 0.4); /*fondo más opaco*/
+}
+
+/* Retraso escalonado para cada caja de servicio */
+.Servicio-i:nth-child(1) { animation-delay: 0.1s; }
+.Servicio-i:nth-child(2) { animation-delay: 0.2s; }
+.Servicio-i:nth-child(3) { animation-delay: 0.3s; }
+.Servicio-i:nth-child(4) { animation-delay: 0.4s; }
+.Servicio-i:nth-child(5) { animation-delay: 0.5s; }
 
 .Servicio-i h4 {
     color: #002a77; /*color del título*/
@@ -217,7 +246,13 @@ main {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /*sombra para profundidad*/
     background: linear-gradient(135deg, #4facfe 0%, #00f2fe 50%, #1e3c72 100%); /*gradiente de fondo*/
     position: relative; /*para posicionar el contenido interno*/
+    animation: slideInLeft 0.8s ease-out; /*animación de entrada*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*transiciones suaves*/
+}
 
+.informacionContacto:hover {
+    transform: translateY(-10px) scale(1.02); /*elevar y agrandar*/
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2); /*sombra más intensa*/
 }
 
 .contenidoInterno {
@@ -276,6 +311,13 @@ main {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /*sombra para profundidad*/
     background: linear-gradient(135deg, #4facfe 0%, #00f2fe 50%, #1e3c72 100%); /*gradiente de fondo*/
     position: relative; /*para posicionar el contenido interno*/
+    animation: slideInRight 0.8s ease-out; /*animación de entrada*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*transiciones suaves*/
+}
+
+.formularioContacto:hover {
+    transform: translateY(-10px) scale(1.02); /*elevar y agrandar*/
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2); /*sombra más intensa*/
 }
 
     /* Contenido interno con fondo blanco y bordes redondeados */
@@ -384,6 +426,13 @@ main {
     text-align: center; /*centrar el texto*/
     border-radius: 20px; /*bordes redondeados*/
     border: 7px solid #ffffff; /*borde blanco*/
+    animation: zoomIn 0.8s ease-out; /*animación de entrada*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*transiciones suaves*/
+}
+
+.contenidoInternoN:hover {
+    transform: translateY(-10px) scale(1.03); /*elevar y agrandar*/
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2); /*agregar sombra al hover*/
 }
 
 .contenidoInternoN h2 {
@@ -409,6 +458,64 @@ main {
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1); /*para sombra*/
     margin-top: 50px; /*espacio encima del footer*/
 }
+
+:hover {
+    text-decoration: underline; /*subrayado al pasar el mouse*/
+}
+
+/* ============================================ */
+/*           ANIMACIONES KEYFRAMES             */
+/* ============================================ */
+
+/* Animación de deslizamiento desde la izquierda */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animación de deslizamiento desde la derecha */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animación de aparición desde abajo con desvanecimiento */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación de zoom */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
 
 /* --- RESPONSIVE: TABLETS --- */
 @media (max-width: 900px) {
@@ -478,6 +585,9 @@ main {
         gap: 15px;
     }
 }
+
+
+
 
 
 /* --- RESPONSIVE: MOVILES --- */
