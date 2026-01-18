@@ -4,7 +4,7 @@ Este es un sitio web informativo para una veterinaria. Incluye páginas de inici
 
 ## 🌐 Demo
 Mira la página publicada aquí:  
-https://jorgezarate15.github.io/Veterinary-website/
+https://veterinaria-azulito.netlify.app/
 
 ## 🧰 Tecnologías usadas
 - HTML5
@@ -15,6 +15,4 @@ https://jorgezarate15.github.io/Veterinary-website/
 2. Abre el archivo `index.html` en tu navegador.
 
 ## 📌 Próximas mejoras
-- Versión para celulares
 - Galería de fotos
-- Formulario de contacto
