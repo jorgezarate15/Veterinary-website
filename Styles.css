@@ -11,13 +11,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e4e4e4;
+    background-color: #f0f9ff;
 }
 
             /* Estilos para el encabezado */
 
 .header {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 50%, #1e3c72 100%); /*gradiente de fondo*/
+    background: linear-gradient(135deg, #0ea5e9 0%, #38bdf8 50%, #0284c7 100%); /*gradiente de fondo*/
     color: #ffffff; /*color del texto*/
     padding: 15px 30px; /*espacio alrededor del contenido*/
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /*para sombra*/
@@ -60,7 +60,7 @@ main {
 }
 
 .menuPrincipal nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.2); /*fondo semi-transparente al pasar el mouse*/
+    background: rgba(6, 182, 212, 0.3); /*fondo semi-transparente al pasar el mouse*/
     transform: translateY(-2px); /*levantar ligeramente el botón*/
 }
 
@@ -99,7 +99,7 @@ main {
 
 .informacionPrincipal h2 {
     font-size: 2.5rem; /*tamaño del título*/
-    color: #002a77; /*color del título*/
+    color: #0284c7; /*color del título*/
     margin-bottom: 20px; /*espacio debajo del título*/
     text-align: left;
 }
@@ -133,7 +133,7 @@ main {
             /* estilo para sección de servicios */
 
 #Servicioss {
-    background-color:rgb(219, 219, 219);
+    background-color:#f0f9ff;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /*para sombra*/
     border-radius: 20px; /*bordes redondeados*/
 }
@@ -158,7 +158,7 @@ main {
 
 .listaServicios h2 {
     font-size: 2.5rem; /*tamaño del título*/
-    color: #002a77; /*color del título*/
+    color: #0284c7; /*color del título*/
     margin-bottom: 60px; /*espacio debajo del título*/
     text-align: center; /*centrar el texto*/
 }
@@ -195,7 +195,7 @@ main {
 .Servicio-i:nth-child(5) { animation-delay: 0.5s; }
 
 .Servicio-i h4 {
-    color: #002a77; /*color del título*/
+    color: #0284c7; /*color del título*/
     font-size: 1.3rem; /*tamaño del título*/
     margin-bottom: 10px; /*espacio debajo del título*/
     }
@@ -215,7 +215,7 @@ main {
             /*estilo de contacto*/ 
 
 #Contacto {
-    background-color: rgb(233, 229, 229); /*color de fondo*/
+    background-color: #f0f9ff; /*color de fondo*/
     padding: 50px 0; /*espacio arriba y abajo*/
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /*para sombra*/
     border-radius: 20px; /*bordes redondeados*/
@@ -244,7 +244,7 @@ main {
     border-radius: 30px; /*bordes redondeados*/
     padding: 7px; /* Grosor del borde */
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /*sombra para profundidad*/
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 50%, #1e3c72 100%); /*gradiente de fondo*/
+    background: linear-gradient(135deg, #0ea5e9 0%, #38bdf8 50%, #0284c7 100%); /*gradiente de fondo*/
     position: relative; /*para posicionar el contenido interno*/
     animation: slideInLeft 0.8s ease-out; /*animación de entrada*/
     transition: transform 0.3s ease, box-shadow 0.3s ease; /*transiciones suaves*/
@@ -276,7 +276,7 @@ main {
 
 .informacionContacto h2{
     font-size: 2.5rem; /*tamaño del título*/
-    color: #002a77; /*color del título*/
+    color: #0284c7; /*color del título*/
     margin-bottom: 15px; /*espacio debajo del título*/
     text-align: center; /*alinear a la izquierda*/
 
@@ -309,7 +309,7 @@ main {
     border-radius: 30px; /*bordes redondeados*/
     padding: 7px; /* Grosor del borde */
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /*sombra para profundidad*/
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 50%, #1e3c72 100%); /*gradiente de fondo*/
+    background: linear-gradient(135deg, #0ea5e9 0%, #38bdf8 50%, #0284c7 100%); /*gradiente de fondo*/
     position: relative; /*para posicionar el contenido interno*/
     animation: slideInRight 0.8s ease-out; /*animación de entrada*/
     transition: transform 0.3s ease, box-shadow 0.3s ease; /*transiciones suaves*/
@@ -331,7 +331,7 @@ main {
 
 .formularioContacto h2 {
     font-size: 2.5rem; /*tamaño del título*/
-    color: #002a77; /*color del título*/
+    color: #0284c7; /*color del título*/
     margin-bottom: 20px; /*espacio debajo del título*/
     text-align: center; /*centrar el texto*/
 }
@@ -350,7 +350,7 @@ main {
 
 .contenidoInternoF label {
     font-weight: bold; /*negrita*/
-    color: #002a77; /*color del texto*/
+    color: #0284c7; /*color del texto*/
     margin-bottom: 8px; /*espacio debajo del label*/
     font-size: 1.1rem; /*tamaño del texto*/
 }
@@ -363,7 +363,7 @@ main {
 }
 
 .contenidoInternoF input:focus, .contenidoInternoF textarea:focus {
-    border-color: #002a77; /*cambiar color del borde al enfocar*/
+    border-color: #0ea5e9; /*cambiar color del borde al enfocar*/
     outline: none; /*quitar el outline por defecto*/
 }
 .contenidoInternoF textarea {
@@ -379,7 +379,7 @@ main {
 
 /* Estilos del botón */
 .enviar button {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 50%, #1e3c72 100%); /*gradiente de fondo*/
+    background: linear-gradient(135deg, #0ea5e9 0%, #38bdf8 50%, #0284c7 100%); /*gradiente de fondo*/
     color: #ffffff; /*color del texto*/
     padding: 15px 40px; /*espacio alrededor del texto*/
     border: none; /*sin borde*/
@@ -388,13 +388,13 @@ main {
     font-weight: bold; /*negrita*/
     cursor: pointer; /*cambiar cursor al pasar sobre el botón*/
     transition: all 0.3s ease; /*transición suave para hover*/
-    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3); /*sombra para profundidad*/
+    box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3); /*sombra para profundidad*/
 }
 
 /* Efecto hover para el botón */
 .enviar button:hover {
     transform: translateY(-2px); /*levantar ligeramente el botón*/
-    box-shadow: 0 8px 25px rgba(79, 172, 254, 0.4); /*sombra más grande al pasar el mouse*/
+    box-shadow: 0 8px 25px rgba(14, 165, 233, 0.4); /*sombra más grande al pasar el mouse*/
 }
 
 .enviar button:active {
@@ -403,7 +403,7 @@ main {
 
             /* estilo para la seccion de nosotros */
 #Nosotros {
-    background-color: rgb(219, 219, 219);
+    background-color: #f0f9ff;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /*para sombra*/
     border-radius: 20px; /*bordes redondeados*/
 }
@@ -419,7 +419,7 @@ main {
 }
 
 .contenidoInternoN {
-    background-color: #e4e4e4; /*color de fondo*/
+    background-color: #f0f9ff; /*color de fondo*/
     padding: 20px; /*espacio alrededor del contenido*/
     max-width: 1000px; /*ancho máximo del contenedor*/
     margin: 0 auto; /*centrar el contenedor*/
@@ -437,7 +437,7 @@ main {
 
 .contenidoInternoN h2 {
     font-size: 2.5rem; /*tamaño del título*/
-    color: #002a77; /*color del título*/
+    color: #0284c7; /*color del título*/
     margin-bottom: 20px; /*espacio debajo del título*/
     text-align: center; /*centrar el texto*/
 }
